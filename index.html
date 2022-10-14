@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="navigation">
+		<ul>
+			<li>
+				<a href="">
+				    <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+				    <span class="title"><h2>Brand Name</h2></span>
+			    </a>
+			</li>
+			<li>
+				<a href="">
+				    <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+				    <span class="title">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+					<span class="title">Customer</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+					<span class="title">Message</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="icon"><i class="fa fa-question" aria-hidden="true"></i>
+</span>
+					<span class="title">Help</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i>
+</span>
+					<span class="title">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+					<span class="title">Password</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+					<span class="title">Sign Out</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="main">
+		<div class="topbar">
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<div class="search">
+				<label>
+					<input type="text" placeholder="Search here" name="">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</label>				
+			</div>
+			<div class="user">
+					<img src="user.jpg">
+			</div>
+
+
+			<!-- <div class="cardBox">
+				<div class="card">
+					<div>
+						<div class="numbres">1,042</div>
+						<div class="cardName">Daily Views</div>
+				    </div>
+				    <div class="iconBox">
+				    	<i class="fa fa-eye" aria-hidden="true"></i>
+				    </div>
+			    </div>
+
+
+			    <div class="card">
+					<div>
+						<div class="numbres">1,042</div>
+						<div class="cardName">Sales</div>
+				    </div>
+				    <div class="iconBox">
+				    	<i class=""></i>
+				    </div>
+			    </div>
+
+
+			    <div class="card">
+					<div>
+						<div class="numbres">1,042</div>
+						<div class="cardName">Comments</div>
+				    </div>
+				    <div class="iconBox">
+				    	<i class=""></i>
+				    </div>
+			    </div>
+			</div> -->
+
+			<div class="details">
+				<div class="recentOrders">
+					<div class="cardHeader">
+						<center><h2>Recent Ordes</h2></center>
+						<a href="#"
+						class="btn">View All</a>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Table Head</th>
+								<th>Table Head</th>
+								<th>Table Head</th>
+								<th>Table Head</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Body </td>
+								<td>Body </td>
+								<td>Body </td>
+								<td>Body </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- <div class="recentCustomers">
+					<div class="cardHeader">
+						<h2>Recent Customers</h2>
+					</div>
+				</div> -->
+			</div>
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+	
+	function toggleMenu(){
+		let toggle =  document.querySelector('.toggle');
+		let navigation = document.querySelector('.navigation');
+		let main = document.querySelector('.main');
+		toggle.classList.toggle('active');
+		navigation.classList.toggle('active');
+		main.classList.toggle('active');
+	}
+</script>
+
+</body>
+</html>
